@@ -142,14 +142,20 @@ span {
     }
 
     #menu {
-        display: block;
         color: var(--text-light);
         cursor: pointer;
+        float: right;
+        padding-right: 0.4rem;
     }
 
-    #menu::before {
-        content: 'Menu';
+    #menu.active::before {
+        content: '☰';
     }
+    #menu::before {
+        content: 'X';
+        font-size: 1.2rem;
+    }
+
     #navigation {
         display: block;
         text-align: left;
