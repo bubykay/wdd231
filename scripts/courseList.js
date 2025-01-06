@@ -119,4 +119,9 @@ document.querySelectorAll('.group-item').forEach((item) => {
     }
 })
 
+document.querySelector('#credit').textContent = courses.reduce(
+    (acummulator, course) => acummulator + course.credits,
+    0
+)
+
 populateCoursesListContainer()

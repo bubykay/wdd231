@@ -207,3 +207,21 @@ span {
 .completed::before {
     content: '✔ ';
 }
+
+#credit {
+    color: var(--text-dark);
+}
+
+header img {
+    width: 100px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.4rem;
+}
+
+.flag {
+    width: 150px;
+}
