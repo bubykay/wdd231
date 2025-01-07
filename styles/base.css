@@ -210,14 +210,14 @@ header img {
         cursor: pointer;
         float: right;
         padding-right: 0.4rem;
+        font-size: 1.2rem;
     }
 
-    #menu.active::before {
+    #menu::before {
         content: '☰';
     }
-    #menu::before {
+    #menu.active::before {
         content: 'X';
-        font-size: 1.2rem;
     }
 
     #navigation {
