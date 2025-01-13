@@ -2,20 +2,89 @@
 <html lang="en">
 
 <head>
-  <script
-    src="scripts/common.js"
-    defer
-  ></script>
   <meta charset="UTF-8">
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-  <title>Ekiti Chamber of Commerce</title>
+  <title>Ekiti State Chamber of Commerce</title>
+
+  <!-- Meta Tags -->
+  <meta
+    name="description"
+    content="Discover the Ekiti State Chamber of Commerce (EKICCIMA), a hub for business growth, trade advocacy, and economic development."
+  >
+  <meta
+    name="keywords"
+    content="Ekiti, Chamber of Commerce, EKICCIMA, Business, Trade, Economy"
+  >
+  <meta
+    name="author"
+    content="Kayode Adetayo"
+  >
+  <meta
+    name="theme-color"
+    content="#2c3e50"
+  >
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+  <meta
+    name="language"
+    content="en"
+  >
+  <meta
+    property="og:title"
+    content="Ekiti State Chamber of Commerce (EKICCIMA)"
+  >
+  <meta
+    property="og:description"
+    content="A hub for business growth, trade advocacy, and economic development in Ekiti State."
+  >
+  <meta
+    property="og:image"
+    content="images/ekiccima-banner.jpg"
+  >
+  <meta
+    property="og:url"
+    content="https://www.ekiccima.org"
+  >
+  <meta
+    property="og:type"
+    content="website"
+  >
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+  <meta
+    name="twitter:title"
+    content="Ekiti State Chamber of Commerce (EKICCIMA)"
+  >
+  <meta
+    name="twitter:description"
+    content="A hub for business growth, trade advocacy, and economic development in Ekiti State."
+  >
+  <meta
+    name="twitter:image"
+    content="images/ekiccima-banner.jpg"
+  >
+
+  <!-- Link Tags -->
   <link
-    rel="preload"
-    href="scripts/common.js"
-    as="script"
+    rel="icon"
+    href="images/favicon.ico"
+    type="image/x-icon"
+  >
+  <link
+    rel="apple-touch-icon"
+    href="images/apple-touch-icon.png"
+    sizes="180x180"
+  >
+  <link
+    rel="manifest"
+    href="images/manifest.json"
   >
   <link
     rel="preconnect"
@@ -23,31 +92,33 @@
   >
   <link
     rel="preconnect"
-    href="https://fonts.gstatics.com"
+    href="https://fonts.gstatic.com"
     crossorigin
   >
   <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="images/apple-touch-icon.png"
+    rel="stylesheet"
+    href="styles/styles.css"
   >
   <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="images/favicon-32x32.png"
-  >
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="images/favicon-16x16.png"
-  >
-  <link
-    rel="manifest"
-    href="images/site.webmanifest"
+    rel="stylesheet"
+    href="styles/directory.css"
   >
 
+  <!-- Scripts -->
+  <script
+    src="scripts/header.js"
+    defer
+  ></script>
+  <script
+    src="scripts/footer.js"
+    defer
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    integrity="sha384-GvckgFlSR5WHlRDl5h7cFlzgTGy7WSBjH0Kw/Luxargh+2k/DkZtShKyx++e21+N"
+    crossorigin="anonymous"
+    defer
+  ></script>
   <script
     src="scripts/directory.js"
     defer
@@ -55,6 +126,7 @@
 </head>
 
 <body>
+  <!-- Templates -->
   <template class="info-card-template">
     <div class="card">
       <div class="card-title">Title</div>
@@ -64,6 +136,7 @@
       </div>
     </div>
   </template>
+
   <template class="company-card-template">
     <div class="company-card-item">
       <h2></h2>
@@ -83,19 +156,22 @@
       </div>
     </div>
   </template>
-  <template class="business-card"> </template>
+
+  <template class="business-card"></template>
+
+  <!-- Main Content -->
   <main>
     <section class="hero">
       <picture>
         <img
           src="images/hero.jpg"
-          alt=""
-          width="100%"
+          alt="Hero Image"
           loading="lazy"
         >
       </picture>
     </section>
     <section class="content">
+      <h2 class="content-head">Home</h2>
       <div class="info-card-container">
         <div class="info-card-item event">
           <h2>Events</h2>
@@ -112,7 +188,7 @@
           </div>
         </div>
         <div class="info-card-item weather">
-          <h2>Weather Forcast</h2>
+          <h2>Weather Forecast</h2>
           <div class="card-body">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, alias voluptatibus! Est reprehenderit
             veniam quaerat illum expedita ratione assumenda molestias!
