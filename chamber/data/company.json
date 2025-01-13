@@ -1,0 +1,128 @@
+[
+    {
+        "name": "GreenHealth Pharmaceuticals 1",
+        "address": "78 Health Avenue, Ado-Ekiti, Ekiti State",
+        "phone": "+2347063870851",
+        "website": "https://greenhealthpharma.com",
+        "icon": "company_icon5.png",
+        "membershipLevel": 2,
+        "description": "A description for GreenHealth Pharmaceuticals 1."
+    },
+    {
+        "name": "Fountain Tech Hub 2",
+        "address": "123 Ado Road, Ado-Ekiti, Ekiti State",
+        "phone": "+2347017225847",
+        "website": "https://fountaintechhub.com",
+        "icon": "company_icon2.png",
+        "membershipLevel": 1,
+        "description": "A description for Fountain Tech Hub 2."
+    },
+    {
+        "name": "Fountain Tech Hub 3",
+        "address": "123 Ado Road, Ado-Ekiti, Ekiti State",
+        "phone": "+2347092090930",
+        "website": "https://fountaintechhub.com",
+        "icon": "company_icon2.png",
+        "membershipLevel": 3,
+        "description": "A description for Fountain Tech Hub 3."
+    },
+    {
+        "name": "Ekiti Agro Ventures 4",
+        "address": "45 Agric Lane, Ikere-Ekiti, Ekiti State",
+        "phone": "+2347058886392",
+        "website": "https://ekitiagroventures.ng",
+        "icon": "company_icon1.png",
+        "membershipLevel": 3,
+        "description": "A description for Ekiti Agro Ventures 4."
+    },
+    {
+        "name": "Ado Digital Solutions 5",
+        "address": "56 Tech Park, Ado-Ekiti, Ekiti State",
+        "phone": "+2347015237219",
+        "website": "https://adodigitalsolutions.com",
+        "icon": "company_icon3.png",
+        "membershipLevel": 2,
+        "description": "A description for Ado Digital Solutions 5."
+    },
+    {
+        "name": "Ekiti Travels & Tours 6",
+        "address": "14 Tourism Road, Ijero-Ekiti, Ekiti State",
+        "phone": "+2347077362343",
+        "website": "https://ekititours.com",
+        "icon": "company_icon3.png",
+        "membershipLevel": 1,
+        "description": "A description for Ekiti Travels & Tours 6."
+    },
+    {
+        "name": "Fountain Tech Hub 7",
+        "address": "123 Ado Road, Ado-Ekiti, Ekiti State",
+        "phone": "+2347096946288",
+        "website": "https://fountaintechhub.com",
+        "icon": "company_icon4.png",
+        "membershipLevel": 3,
+        "description": "A description for Fountain Tech Hub 7."
+    },
+    {
+        "name": "Ado Digital Solutions 8",
+        "address": "56 Tech Park, Ado-Ekiti, Ekiti State",
+        "phone": "+2347052981111",
+        "website": "https://adodigitalsolutions.com",
+        "icon": "company_icon3.png",
+        "membershipLevel": 2,
+        "description": "A description for Ado Digital Solutions 8."
+    },
+    {
+        "name": "GreenHealth Pharmaceuticals 9",
+        "address": "78 Health Avenue, Ado-Ekiti, Ekiti State",
+        "phone": "+2347052458779",
+        "website": "https://greenhealthpharma.com",
+        "icon": "company_icon1.png",
+        "membershipLevel": 3,
+        "description": "A description for GreenHealth Pharmaceuticals 9."
+    },
+    {
+        "name": "Fountain Education Center 10",
+        "address": "88 Learning Street, Ado-Ekiti, Ekiti State",
+        "phone": "+2347091617919",
+        "website": "https://fountaineducation.com",
+        "icon": "company_icon1.png",
+        "membershipLevel": 1,
+        "description": "A description for Fountain Education Center 10."
+    },
+    {
+        "name": "Fountain Tech Hub 11",
+        "address": "123 Ado Road, Ado-Ekiti, Ekiti State",
+        "phone": "+2347053181664",
+        "website": "https://fountaintechhub.com",
+        "icon": "company_icon5.png",
+        "membershipLevel": 1,
+        "description": "A description for Fountain Tech Hub 11."
+    },
+    {
+        "name": "Fountain Tech Hub 12",
+        "address": "123 Ado Road, Ado-Ekiti, Ekiti State",
+        "phone": "+2347075358942",
+        "website": "https://fountaintechhub.com",
+        "icon": "company_icon4.png",
+        "membershipLevel": 3,
+        "description": "A description for Fountain Tech Hub 12."
+    },
+    {
+        "name": "Fountain Education Center 13",
+        "address": "88 Learning Street, Ado-Ekiti, Ekiti State",
+        "phone": "+2347094996203",
+        "website": "https://fountaineducation.com",
+        "icon": "company_icon3.png",
+        "membershipLevel": 3,
+        "description": "A description for Fountain Education Center 13."
+    },
+    {
+        "name": "Fountain Education Center 14",
+        "address": "88 Learning Street, Ado-Ekiti, Ekiti State",
+        "phone": "+2347055298052",
+        "website": "https://fountaineducation.com",
+        "icon": "company_icon4.png",
+        "membershipLevel": 3,
+        "description": "A description for Fountain Education Center 14."
+    }
+]
