@@ -18,7 +18,7 @@ const navItems = [
 ];
 
 const body = document.querySelector('body');
-const header = document.createElement('header');
+const header = document.querySelector('header');
 const nav = document.createElement('nav');
 let ul = document.createElement('ul');
 const brandPicture = document.createElement('picture');

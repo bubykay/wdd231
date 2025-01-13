@@ -1,7 +1,7 @@
 const date = new Date();
 const currentYear = date.getFullYear();
 
-const footer = document.createElement('footer');
+const footer = document.querySelector('footer');
 const socialElement = document.createElement('div');
 const contactElement = document.createElement('div');
 const webInfoElement = document.createElement('div');
