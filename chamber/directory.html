@@ -83,10 +83,6 @@
     sizes="180x180"
   >
   <link
-    rel="manifest"
-    href="images/manifest.json"
-  >
-  <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
   >
@@ -95,6 +91,19 @@
     href="https://fonts.gstatic.com"
     crossorigin
   >
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+    as="style"
+    onload="this.rel='stylesheet'"
+  >
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+    >
+  </noscript>
+
   <link
     rel="stylesheet"
     href="styles/styles.css"
@@ -189,7 +198,7 @@
     <section class="hero">
       <picture>
         <img
-          src="images/hero.jpg"
+          src="images/rafters.jpg"
           alt="Hero Image"
         >
       </picture>

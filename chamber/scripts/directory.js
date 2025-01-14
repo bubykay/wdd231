@@ -28,19 +28,3 @@ const populateCompaniesData = (companies) => {
 };
 
 fetcCompanies();
-
-setMetaTags({
-    title: 'Ekiti State Chamber of Commerce Set in directory.js',
-    meta: [
-        {
-            name: 'description',
-            content:
-                'Discover the Ekiti State Chamber of Commerce (EKICCIMA), a hub for business growth, trade advocacy, and economic development.',
-        },
-        {
-            name: 'keywords',
-            content: 'Ekiti, Chamber of Commerce, EKICCIMA, Business, Trade, Economy',
-        },
-    ],
-    links: [{ rel: 'stylesheet', href: 'styles/directory.css' }],
-});
