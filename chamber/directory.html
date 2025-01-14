@@ -105,10 +105,7 @@
   >
 
   <!-- Scripts -->
-  <script
-    src="scripts/header.js"
-    defer
-  ></script>
+
   <script
     src="scripts/footer.js"
     defer
@@ -152,7 +149,31 @@
   </template>
 
   <template class="business-card"></template>
-  <header></header>
+  <header>
+    <div class="brand">
+      <picture>
+        <img
+          src="images/placeholder.png"
+          width="50px"
+          loading="lazy"
+          alt="EKSCC"
+        >
+      </picture>
+      <div>
+        <h1>Ekiti</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
   <!-- Main Content -->
   <main>
@@ -166,7 +187,7 @@
       </picture>
     </section>
     <section class="content">
-      <h2 class="content-head">Home</h2>
+      <h1 class="content-head">Home</h1>
       <div class="info-card-container">
         <div class="info-card-item event">
           <h2>Events</h2>

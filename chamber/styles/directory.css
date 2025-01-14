@@ -46,7 +46,8 @@
 
 .info-card-item {
     background-color: var(--accent-color-2);
-    padding: var(--gap);
+    padding-bottom: var(--gap);
+
     text-align: left;
 }
 .info-card-item h2 {
@@ -54,13 +55,14 @@
     padding: var(--gap);
 }
 .info-card-item .card-body {
-    padding: 5px;
+    padding: 10px 15px;
 }
 .hero img {
     width: 100%;
 }
 .content-head {
     color: var(--text-dark);
+    text-align: left;
 }
 
 @media (min-width: 600px) {
