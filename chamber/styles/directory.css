@@ -65,6 +65,10 @@
     text-align: left;
 }
 
+.toggleMenu {
+    display: block;
+}
+
 @media (min-width: 600px) {
     #company-card-container {
         display: grid;
