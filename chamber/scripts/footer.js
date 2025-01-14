@@ -21,6 +21,8 @@ socials.forEach((social) => {
     const picture = document.createElement('picture');
     const img = document.createElement('img');
     img.src = `images/${social}.png`;
+    img.setAttribute('width', '50');
+    img.setAttribute('height', '50');
     img.alt = social;
     picture.appendChild(img);
     socialElement.appendChild(picture);

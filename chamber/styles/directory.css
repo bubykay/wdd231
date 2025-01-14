@@ -20,8 +20,8 @@
     gap: var(--gap);
 }
 .company-info img {
-    width: 80px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .tag-line {

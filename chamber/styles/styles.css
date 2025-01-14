@@ -58,6 +58,7 @@ footer {
     gap: 20px;
     background-color: var(--primary-color);
     flex-wrap: wrap;
+    min-height: 20px;
 }
 footer p {
     margin: 0;
