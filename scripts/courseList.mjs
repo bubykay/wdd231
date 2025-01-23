@@ -1,3 +1,4 @@
+const log = require('./test.js');
 const courses = [
     {
         subject: 'CSE',
@@ -65,63 +66,64 @@ const courses = [
         technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false,
     },
-]
-const courseListItemsContainer = document.querySelector('.course-list-items')
-courseListItemsContainer.innerHTML = ''
+];
+const courseListItemsContainer = document.querySelector('.course-list-items');
+courseListItemsContainer.innerHTML = '';
 
 const populateAllCourses = () => {
     return courses.map((course) => {
-        const div = document.createElement('div')
-        div.textContent = course.subject + course.number
+        const div = document.createElement('div');
+        div.textContent = course.subject + course.number;
 
-        div.classList.add('course-item')
+        div.classList.add('course-item');
         if (course.completed) {
-            div.classList.add('completed')
+            div.classList.add('completed');
         }
 
-        return div
-    })
-}
+        return div;
+    });
+};
 
 const populateCourseBySubject = (subject) => {
     return courses
         .filter((course) => course.subject.toLowerCase() === subject.toLowerCase())
         .map((course) => {
-            const div = document.createElement('div')
-            div.textContent = course.subject + course.number
+            const div = document.createElement('div');
+            div.textContent = course.subject + course.number;
 
-            div.classList.add('course-item')
+            div.classList.add('course-item');
             if (course.completed) {
-                div.classList.add('completed')
+                div.classList.add('completed');
             }
 
-            return div
-        })
-}
+            return div;
+        });
+};
 
 const populateCoursesListContainer = () => {
     populateAllCourses().forEach((courseDiv) => {
-        courseListItemsContainer.appendChild(courseDiv)
-    })
-}
+        courseListItemsContainer.appendChild(courseDiv);
+    });
+};
 
 document.querySelectorAll('.group-item').forEach((item) => {
     item.onclick = (event) => {
-        courseListItemsContainer.innerHTML = ''
-        const text = event.target.textContent
+        courseListItemsContainer.innerHTML = '';
+        const text = event.target.textContent;
         if (text.toLowerCase() === 'all') {
-            populateCoursesListContainer()
+            populateCoursesListContainer();
         } else {
             populateCourseBySubject(text).forEach((courseDiv) => {
-                courseListItemsContainer.appendChild(courseDiv)
-            })
+                courseListItemsContainer.appendChild(courseDiv);
+            });
         }
-    }
-})
+    };
+});
 
 document.querySelector('#credit').textContent = courses.reduce(
     (acummulator, course) => acummulator + course.credits,
     0
-)
+);
 
-populateCoursesListContainer()
+populateCoursesListContainer();
+log('this is funny sha');

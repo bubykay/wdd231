@@ -1,0 +1,21 @@
+.weather > .forcast {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.hero {
+    position: relative;
+}
+.cta {
+    bottom: 80px;
+    right: 70px;
+    color: var(--text-light);
+    position: absolute;
+    padding: 10px 20px;
+    background-color: gray;
+    font-size: 1.3em;
+}
+
+.cta:hover {
+    cursor: pointer;
+}
