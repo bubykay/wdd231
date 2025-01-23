@@ -1,7 +1,7 @@
 const infoContainer = document.querySelector('#company-card-container');
 const cardTemplate = document.querySelector('.company-card-template');
 
-export default fetcCompanies = async () => {
+const fetcCompanies = async () => {
     const response = await fetch('../chamber/data/company.json');
     const data = await response.json();
     populateCompaniesData(data);
