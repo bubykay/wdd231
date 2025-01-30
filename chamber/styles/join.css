@@ -5,8 +5,6 @@ form {
     background-color: var(--color-grey);
     display: grid;
     color: var(--text-dark);
-    max-width: 800px;
-    margin: 1rem auto;
 }
 
 fieldset {
@@ -15,12 +13,6 @@ fieldset {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-}
-
-legend {
-    padding: 0.5rem;
-    color: var(--primay-color);
-    font-size: 1.3rem;
 }
 
 label,
@@ -86,11 +78,28 @@ input[type='submit']:hover {
 }
 
 .membership-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
     color: var(--text-dark);
-    max-width: 800px;
-    margin: auto;
+}
+
+.membership-cards > div {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media (min-width: 600px) {
+    section {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    section > h2 {
+        grid-column: span 2;
+        color: var(--text-dark);
+        margin: 20px;
+    }
 }
