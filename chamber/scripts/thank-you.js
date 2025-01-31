@@ -1,5 +1,5 @@
 const section = document.querySelector('section');
-// Function to get URL parameters and their values
+
 function getUrlParams() {
     const params = {};
     const queryString = window.location.search;
@@ -12,11 +12,9 @@ function getUrlParams() {
     return params;
 }
 
-// Example usage
 const params = getUrlParams();
 console.log(params);
 
-// Function to format text to title case and remove hyphens
 function formatKey(key) {
     return key
         .split('_')
@@ -24,7 +22,6 @@ function formatKey(key) {
         .join(' ');
 }
 
-// Update the table display function to format keys
 function displayParamsAsTable(params) {
     const table = document.createElement('table');
     const tbody = document.createElement('tbody');
@@ -46,5 +43,4 @@ function displayParamsAsTable(params) {
     section.appendChild(table);
 }
 
-// Display the params as a table with formatted keys
 displayParamsAsTable(params);
