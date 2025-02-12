@@ -66,6 +66,7 @@ discover.forEach((place) => {
   img.alt = place.name;
   img.width = 300;
   img.height = 200;
+  img.loading = "lazy";
   figure.appendChild(img);
   card.appendChild(figure);
 

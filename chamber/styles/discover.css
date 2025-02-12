@@ -44,6 +44,17 @@ main {
   padding: 10px;
   border-radius: 10px;
 }
+footer {
+  margin-top: 20px;
+}
+
+@media (min-width: 641px) {
+  .discover-card:hover {
+    background-color: hsl(11, 0%, 90%);
+    transform: scale(1.05);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+}
 
 @media (max-width: 640px) {
   .discover-container {
