@@ -47,7 +47,16 @@ const discover = [
     description:
       "A historical site symbolizing the unity and strength of the Ekiti people during the Ekiti Parapo War.",
   },
+  {
+    name: "Ekiti Parapo Pavilion",
+    address: "Ado-Ekiti, Ekiti State, Nigeria",
+    description:
+      "A historical site symbolizing the unity and strength of the Ekiti people during the Ekiti Parapo War.",
+  },
 ];
+
+const countSpan = document.querySelector("#discover-count");
+countSpan.textContent = discover.length;
 
 const container = document.createElement("div");
 container.classList.add("discover-container");
@@ -62,7 +71,7 @@ discover.forEach((place) => {
 
   const figure = document.createElement("figure");
   const img = document.createElement("img");
-  img.src = `images/${place.name.toLowerCase().replace(/ /g, "-")}.jpg`; // Assuming images are named after the place names
+  img.src = `images/${place.name.toLowerCase().replace(/ /g, "-")}.webp`; // Assuming images are named after the place names
   img.alt = place.name;
   img.width = 300;
   img.height = 200;

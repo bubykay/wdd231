@@ -1,10 +1,41 @@
 body {
 }
+.discover-container h1,
+h2 {
+  margin: 0.5em 0;
+}
+main h1 {
+  margin: 1em 0;
+  font-size: 2.5em;
+}
+.discover-container address {
+  font-weight: bold;
+  margin: 4px 0;
+}
 
+.discover-container button {
+  margin: 5px 0px;
+  font-style: italic;
+  font-weight: bolder;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: var(--accent-color-2);
+  color: var(--text-light);
+  border-radius: 5px;
+}
+
+figure {
+  margin-bottom: 0.5em;
+}
+main {
+  color: black;
+}
 .discover-container {
+  color: black;
   display: grid;
   gap: 10px;
-  color: black;
+  max-width: 1200px;
+  margin: auto auto;
 }
 
 .discover-card {
@@ -21,14 +52,9 @@ body {
       "card2"
       "card3";
   }
-  .discover-card:nth-child(1) {
-    grid-area: card1;
-  }
-  .discover-card:nth-child(2) {
-    grid-area: card2;
-  }
-  .discover-card:nth-child(3) {
-    grid-area: card3;
+  main h1 {
+    margin: 0.8em 0;
+    font-size: 2em;
   }
 }
 
@@ -38,28 +64,10 @@ body {
       "card1 card2"
       "card3 card3";
   }
-  .discover-card:nth-child(1) {
-    grid-area: card1;
-  }
-  .discover-card:nth-child(2) {
-    grid-area: card2;
-  }
-  .discover-card:nth-child(3) {
-    grid-area: card3;
-  }
 }
 
 @media (min-width: 1025px) {
   .discover-container {
     grid-template-areas: "card1 card2 card3";
-  }
-  .discover-card:nth-child(1) {
-    grid-area: card1;
-  }
-  .discover-card:nth-child(2) {
-    grid-area: card2;
-  }
-  .discover-card:nth-child(3) {
-    grid-area: card3;
   }
 }
