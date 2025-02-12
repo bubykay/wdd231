@@ -1,0 +1,65 @@
+body {
+}
+
+.discover-container {
+  display: grid;
+  gap: 10px;
+  color: black;
+}
+
+.discover-card {
+  background-color: hsl(11, 0%, 97%);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .discover-container {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3";
+  }
+  .discover-card:nth-child(1) {
+    grid-area: card1;
+  }
+  .discover-card:nth-child(2) {
+    grid-area: card2;
+  }
+  .discover-card:nth-child(3) {
+    grid-area: card3;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-container {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3";
+  }
+  .discover-card:nth-child(1) {
+    grid-area: card1;
+  }
+  .discover-card:nth-child(2) {
+    grid-area: card2;
+  }
+  .discover-card:nth-child(3) {
+    grid-area: card3;
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-container {
+    grid-template-areas: "card1 card2 card3";
+  }
+  .discover-card:nth-child(1) {
+    grid-area: card1;
+  }
+  .discover-card:nth-child(2) {
+    grid-area: card2;
+  }
+  .discover-card:nth-child(3) {
+    grid-area: card3;
+  }
+}
