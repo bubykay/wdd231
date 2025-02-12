@@ -49,9 +49,6 @@ const discover = [
   },
 ];
 
-const countSpan = document.querySelector("#discover-count");
-countSpan.textContent = discover.length;
-
 const container = document.createElement("div");
 container.classList.add("discover-container");
 
