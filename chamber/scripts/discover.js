@@ -47,12 +47,6 @@ const discover = [
     description:
       "A historical site symbolizing the unity and strength of the Ekiti people during the Ekiti Parapo War.",
   },
-  {
-    name: "Ekiti Parapo Pavilion",
-    address: "Ado-Ekiti, Ekiti State, Nigeria",
-    description:
-      "A historical site symbolizing the unity and strength of the Ekiti people during the Ekiti Parapo War.",
-  },
 ];
 
 const countSpan = document.querySelector("#discover-count");
