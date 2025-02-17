@@ -98,60 +98,96 @@ const bio = document.querySelector(".bio");
 const projectsContainer = document.querySelector(".projects");
 
 portfolio.projects.forEach((project) => {
-  const projectElement = document.createElement("div");
-  projectElement.classList.add("project");
+  if (projectsContainer) {
+    const projectElement = document.createElement("div");
+    projectElement.classList.add("project");
 
-  const projectName = document.createElement("h3");
-  projectName.textContent = project.name;
-  projectElement.appendChild(projectName);
+    const projectName = document.createElement("h3");
+    projectName.textContent = project.name;
+    projectElement.appendChild(projectName);
 
-  const projectDescription = document.createElement("p");
-  projectDescription.textContent = project.description;
-  projectElement.appendChild(projectDescription);
+    const projectDescription = document.createElement("p");
+    projectDescription.textContent = project.description;
+    projectElement.appendChild(projectDescription);
 
-  const projectTechnologies = document.createElement("p");
-  projectTechnologies.textContent = `Technologies: ${project.technologies.join(
-    ", "
-  )}`;
-  projectElement.appendChild(projectTechnologies);
+    const projectTechnologies = document.createElement("p");
+    projectTechnologies.textContent = `Technologies: ${project.technologies.join(
+      ", "
+    )}`;
+    projectElement.appendChild(projectTechnologies);
 
-  const projectLink = document.createElement("a");
-  projectLink.href = project.link;
-  projectLink.innerHTML = "View Project <span>|</span> ";
-  projectElement.appendChild(projectLink);
+    const projectLink = document.createElement("a");
+    projectLink.href = project.link;
+    projectLink.innerHTML = "View Project <span>|</span> ";
+    projectElement.appendChild(projectLink);
 
-  const projectGithub = document.createElement("a");
-  projectGithub.href = project.github;
-  projectGithub.textContent = "GitHub Repository";
-  projectElement.appendChild(projectGithub);
+    const projectGithub = document.createElement("a");
+    projectGithub.href = project.github;
+    projectGithub.textContent = "GitHub Repository";
+    projectElement.appendChild(projectGithub);
 
-  projectsContainer.appendChild(projectElement);
+    projectsContainer.appendChild(projectElement);
+  }
 });
 
 const experienceContainer = document.querySelector(".experience");
 
 portfolio.experience.forEach((job) => {
   const jobElement = document.createElement("div");
-  jobElement.classList.add("job");
+  if (experienceContainer) {
+    jobElement.classList.add("job");
 
-  const jobTitle = document.createElement("h3");
-  jobTitle.textContent = `${job.role} at ${job.company}`;
-  jobElement.appendChild(jobTitle);
+    const jobTitle = document.createElement("h3");
+    jobTitle.textContent = `${job.role} at ${job.company}`;
+    jobElement.appendChild(jobTitle);
 
-  const jobPeriod = document.createElement("p");
-  jobPeriod.textContent = job.period;
-  jobElement.appendChild(jobPeriod);
+    const jobPeriod = document.createElement("p");
+    jobPeriod.textContent = job.period;
+    jobElement.appendChild(jobPeriod);
 
-  const jobResponsibilities = document.createElement("ul");
-  job.responsibilities.forEach((responsibility) => {
-    const responsibilityItem = document.createElement("li");
-    responsibilityItem.textContent = responsibility;
-    jobResponsibilities.appendChild(responsibilityItem);
-  });
-  jobElement.appendChild(jobResponsibilities);
+    const jobResponsibilities = document.createElement("ul");
+    job.responsibilities.forEach((responsibility) => {
+      const responsibilityItem = document.createElement("li");
+      responsibilityItem.textContent = responsibility;
+      jobResponsibilities.appendChild(responsibilityItem);
+    });
+    jobElement.appendChild(jobResponsibilities);
 
-  experienceContainer.appendChild(jobElement);
+    experienceContainer.appendChild(jobElement);
+  }
 });
+
+// contact section
+
+const contactContainer = document.querySelector(".contact");
+
+if (contactContainer) {
+  const contactEmail = document.createElement("p");
+  contactEmail.textContent = `Email: ${portfolio.contact.email}`;
+  contactContainer.appendChild(contactEmail);
+
+  const contactPhone = document.createElement("p");
+  contactPhone.textContent = `Phone: ${portfolio.contact.phone}`;
+  contactContainer.appendChild(contactPhone);
+
+  const contactLocation = document.createElement("p");
+  contactLocation.textContent = `Location: ${portfolio.contact.location}`;
+  contactContainer.appendChild(contactLocation);
+  const contactSocials = document.createElement("div");
+  contactSocials.classList.add("contact-socials");
+
+  Object.entries(portfolio.contact.social).forEach(([platform, url]) => {
+    const socialLink = document.createElement("a");
+    socialLink.href = url;
+    socialLink.textContent =
+      platform.charAt(0).toUpperCase() + platform.slice(1);
+    contactSocials.appendChild(socialLink);
+  });
+
+  contactContainer.appendChild(contactSocials);
+}
+
+// footer section
 
 const footer = document.querySelector("footer");
 
@@ -175,5 +211,27 @@ Object.entries(portfolio.contact.social).forEach(([platform, url]) => {
 
 footer.appendChild(socialLinks);
 
-fullName.textContent = portfolio.name;
-bio.textContent = portfolio.bio;
+if (fullName && bio) {
+  fullName.textContent = portfolio.name;
+  bio.textContent = portfolio.bio;
+}
+const navLinks = document.querySelectorAll("a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((nav) => nav.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
+const observer = new MutationObserver(() => {
+  navLinks.forEach((link) => {
+    if (link.classList.contains("active")) {
+      link.style.color = "white";
+    } else {
+      link.style.color = "";
+    }
+  });
+});
+
+observer.observe(document.body, { attributes: true, subtree: true });

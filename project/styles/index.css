@@ -59,10 +59,11 @@ main {
 }
 
 .projects,
-.experience {
+.portfolio .experience {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  margin: 20px 0;
 }
 .projects a {
   text-decoration: none;
@@ -94,6 +95,19 @@ footer {
   justify-content: center;
 }
 
+p {
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+header nav a:active {
+  color: var(--text-color-white);
+}
+
 @media (min-width: 600px) {
   #menu {
     display: none;
@@ -105,6 +119,10 @@ footer {
   header {
     display: flex;
   }
+}
+
+.active {
+  color: var(--text-color-white);
 }
 
 @media (min-width: 900px) {
