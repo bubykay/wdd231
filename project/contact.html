@@ -74,6 +74,11 @@
     rel="stylesheet"
     href="styles/index.css"
   >
+  <link
+    rel="stylesheet"
+    href="styles/form.css"
+  >
+
   <script
     src="scripts/index.js"
     defer
@@ -93,7 +98,7 @@
     </nav>
 
   </header>
-  <main>
+  <main class="contact-page">
     <section class="contact-form">
       <h2>Contact Form</h2>
       <form
@@ -111,12 +116,15 @@
         </div>
         <div>
           <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-          >
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            >
+            <div class="fake-caret"></div>
+          </div>
         </div>
         <div>
           <label for="message">Message:</label>

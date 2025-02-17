@@ -97,8 +97,8 @@ const bio = document.querySelector(".bio");
 
 const projectsContainer = document.querySelector(".projects");
 
-portfolio.projects.forEach((project) => {
-  if (projectsContainer) {
+if (projectsContainer) {
+  portfolio.projects.forEach((project) => {
     const projectElement = document.createElement("div");
     projectElement.classList.add("project");
 
@@ -127,14 +127,14 @@ portfolio.projects.forEach((project) => {
     projectElement.appendChild(projectGithub);
 
     projectsContainer.appendChild(projectElement);
-  }
-});
+  });
+}
 
 const experienceContainer = document.querySelector(".experience");
 
-portfolio.experience.forEach((job) => {
-  const jobElement = document.createElement("div");
-  if (experienceContainer) {
+if (experienceContainer) {
+  portfolio.experience.forEach((job) => {
+    const jobElement = document.createElement("div");
     jobElement.classList.add("job");
 
     const jobTitle = document.createElement("h3");
@@ -154,8 +154,8 @@ portfolio.experience.forEach((job) => {
     jobElement.appendChild(jobResponsibilities);
 
     experienceContainer.appendChild(jobElement);
-  }
-});
+  });
+}
 
 // contact section
 
@@ -194,20 +194,22 @@ const footer = document.querySelector("footer");
 const socialLinks = document.createElement("div");
 socialLinks.classList.add("social-links");
 
-Object.entries(portfolio.contact.social).forEach(([platform, url]) => {
-  const socialLink = document.createElement("a");
-  socialLink.href = url;
-  socialLink.classList.add("social-link");
+if (footer) {
+  Object.entries(portfolio.contact.social).forEach(([platform, url]) => {
+    const socialLink = document.createElement("a");
+    socialLink.href = url;
+    socialLink.classList.add("social-link");
 
-  const socialIcon = document.createElement("img");
-  socialIcon.src = `images/${platform}.png`;
-  socialIcon.alt = `${platform} icon`;
-  socialIcon.classList.add("social-icon");
-  socialIcon.width = 16;
+    const socialIcon = document.createElement("img");
+    socialIcon.src = `images/${platform}.png`;
+    socialIcon.alt = `${platform} icon`;
+    socialIcon.classList.add("social-icon");
+    socialIcon.width = 16;
 
-  socialLink.appendChild(socialIcon);
-  socialLinks.appendChild(socialLink);
-});
+    socialLink.appendChild(socialIcon);
+    socialLinks.appendChild(socialLink);
+  });
+}
 
 footer.appendChild(socialLinks);
 
@@ -218,20 +220,9 @@ if (fullName && bio) {
 const navLinks = document.querySelectorAll("a");
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.forEach((nav) => nav.classList.remove("active"));
+  if (link.href === window.location.href) {
     link.classList.add("active");
-  });
+  } else {
+    link.classList.remove("active");
+  }
 });
-
-const observer = new MutationObserver(() => {
-  navLinks.forEach((link) => {
-    if (link.classList.contains("active")) {
-      link.style.color = "white";
-    } else {
-      link.style.color = "";
-    }
-  });
-});
-
-observer.observe(document.body, { attributes: true, subtree: true });

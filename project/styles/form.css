@@ -1,0 +1,95 @@
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--text-color-primary);
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="submit"],
+button,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--text-color-primary);
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-item > label > span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.contact-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin: 50px auto;
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contact-socials a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+.contact p {
+  margin: 0;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--text-color-primary);
+  color: var(--text-color-white);
+}
+
+@media (max-width: 641px) {
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 50px auto;
+  }
+}
