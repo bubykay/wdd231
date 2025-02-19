@@ -92,6 +92,8 @@ const portfolio = {
   },
 };
 
+const menuElelment = document.querySelector("#menu");
+
 const fullName = document.querySelector(".name");
 const bio = document.querySelector(".bio");
 
@@ -225,4 +227,11 @@ navLinks.forEach((link) => {
   } else {
     link.classList.remove("active");
   }
+});
+
+console.log(menuElelment);
+
+menuElelment.addEventListener("click", () => {
+  document.querySelector("#menu").classList.toggle("active");
+  document.querySelector("nav ul").classList.toggle("toggleDisplay");
 });

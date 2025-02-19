@@ -74,15 +74,24 @@
     rel="stylesheet"
     href="styles/index.css"
   >
+  <link
+    rel="stylesheet"
+    href="styles/home-page.css"
+  >
   <script
     src="scripts/index.js"
     defer
   ></script>
+  <script
+    src="scripts/home.js"
+    defer
+  ></script>
 </head>
 
-<body>
+<body class="home-page">
   <header>
-    <!-- <div id="menu"></div> -->
+    <span id="menu"></span>
+    <h1 class="intro">Home</h1>
     <nav>
       <ul>
         <li class="nav-link"><a href="index.html">Home</a></li>
@@ -94,7 +103,32 @@
 
   </header>
   <main>
-    <h1>Hero Image here with a CTA</h1>
+    <picture>
+      <source
+        media="(min-width: 900px)"
+        srcset="images/hero.webp"
+      >
+      <source
+        media="(max-width: 641px)"
+        srcset="images/hero-small.webp"
+      >
+      <img
+        src="images/hero-small.webp"
+        alt="Hero image"
+      >
+    </picture>
+
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="name">Kayode Adetayo</span>. I specialize in</h1>
+      <p><span class="dynamic-text"></span></p>
+      <button
+        type="button"
+        onclick="window.location.href='contact.html'"
+      >
+        GET QUOTE
+      </button>
+    </div>
+
   </main>
   <footer></footer>
 
