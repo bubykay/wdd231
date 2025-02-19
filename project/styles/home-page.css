@@ -22,7 +22,6 @@ img {
   border-radius: 10px;
   transform: translate(-50%, -50%);
   padding: 20px 20px;
-  /* background-color: var(--primary-color); */
   background-color: hsla(90, 0%, 4%, 0.6);
 }
 
@@ -33,12 +32,12 @@ img {
 }
 .dynamic-text::after {
   content: "|";
-  color: white;
+  color: var(--text-color-primary);
   animation: blink 0.8s infinite;
 }
 
 .dynamic-text {
-  color: red;
+  color: white;
   font-size: 2em;
   font-weight: bolder;
 }
@@ -46,11 +45,9 @@ img {
 button {
   color: var(--text-color-primary);
   background: none;
-  /* background: red; */
   border: none;
   padding: 12px 24px;
   font-size: 20px;
-  /* color: white; */
   cursor: pointer;
   box-shadow: 5px 5px 2px var(--text-color-primary);
   transition: all 0.3s ease-in-out;
@@ -60,5 +57,4 @@ button:hover {
   box-shadow: 5px 5px 2px white;
   color: white;
   transform: translateY(-3px);
-  /* background: red; */
 }

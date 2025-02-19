@@ -125,6 +125,7 @@ li {
 
 #menu::before {
   content: "☰";
+  color: var(--text-color-primary);
 }
 #menu.active::before {
   content: "X";
